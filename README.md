@@ -1,0 +1,2 @@
+# kmd
+Wordpress starter theme
