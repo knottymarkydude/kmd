@@ -1,0 +1,6 @@
+.DS_Store
+w3cErrors
+package-lock.json
+packaged/
+node_modules/
+dist/
