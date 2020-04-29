@@ -53,4 +53,12 @@ pbcopy < ~/.ssh/id_rsa_git.pub
 Add it to your settings on github- Personal settings
 
 Testing your ssh key.
-ssh -T git@github.com
+ssh -T git@github.
+
+If you don't have a local repository - download it.
+git clone git@github.com:knottymarkydude/kmd.git
+
+Branching
+git branch mark - non tracking branch.
+
+git branch -u origin/mark mark - tracking branch.
