@@ -1,0 +1,69 @@
+mkdir kmd
+cd kmd
+ls -la
+git init
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com:knottymarkydude/kmd.git
+or
+git remote add origin git@github.com:knottymarkydude/kmd.git
+
+git push -u origin master
+
+git log - View commit log
+git log -n 5
+git log --since=2019-01-01
+git log --until=2019-01-01
+git log --author="Mark"
+
+git log --grep="Fred"
+
+git diff - Looks for changes
+git diff --staged - in staged area.
+
+Delete file
+Just delete file
+git rm filename
+git commit -m "Delete file"
+
+git diff --color-words
+
+git commit -am "message" - straight to repository
+
+git show 8b61bb462609a21813d32a8b73b0a8135ad9d4ae
+
+git checkout -- index.html // Discards changes
+
+git reset HEAD index.html // unstages files
+
+git revert 8b61bb462609a21813d32a8b73b0a8135ad9d4ae
+
+Remove untracked files.
+git clean -n (dry-run) -f (forces)
+
+git remote -v
+
+git remote rm origin - removes origin
+
+
+Generate an ssh Key
+ssh-keygen -t rsa -b 4096 -C "mwilson.mark@gmail.com"
+pbcopy < ~/.ssh/id_rsa_git.pub
+Add it to your settings on github- Personal settings
+
+Testing your ssh key.
+ssh -T git@github.
+
+If you don't have a local repository - download it.
+git clone git@github.com:knottymarkydude/kmd.git
+
+Branching
+git branch mark - non tracking branch.
+
+git branch -u origin/mark mark - tracking branch.
+
+
+diff
+git diff origin/master..master
+git diff --colour-words origin/master..master
