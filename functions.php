@@ -2,6 +2,7 @@
 
 require_once('lib/helper.php');
 require_once('lib/enqueue-assets.php');
+require_once('lib/sidebars.php');
 
 function after_pagination() {
   echo 'pagination';
